@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>HTML 5 Geolocation - An Advanced Example</title>
+
+	</head>
+
+	<body onload="checkGeolocationSupport()">
+		<div id="ClimberTrackerHeader">
+			<h3>Mountain Climber Tracker</h3>
+		</div>
+	<div id="MountainClimberTrackerInputElements">
+		Select your mountain destination:<br />
+		<div id="InputElementIndent" style="padding-left:10px;">
+			<input id="MtElbert" type="radio" onclick="startTracking(0)" name="mountainSelect" title="Mount Elbert, Colorado" />&nbsp;Mount Elbert, Colorado<br />
+			<input id="MtMitchell" type="radio" onclick="startTracking(1)" name="mountainSelect" title="Mount Mitchell, North Carolina" />&nbsp;Mount Mitchell, North Carolina<br />
+			<input id="MtRainier" type="radio" onclick="startTracking(2)" name="mountainSelect" title="Mount Rainier, Washington" />&nbsp;Mount Rainier, Washington<br />
+		</div>
+	</div>
+	<div id="Error">
+		<em>We tried but we can't calculate your location.</em>
+	</div>
+	<div id="TrackingTitle">
+		<h4>Tracking your progress:</h4>
+	</div>
+	<div id="TrackingResults" style="padding-left:20px;"></div>
+	<div id="GoogleMap" style="padding-left:20px;">
+		Map image.
+	</div>
+			<script type="text/javascript" src = "app.js"></script>
+	</body>
+
+</html>
